@@ -1,26 +1,50 @@
-<nav class="navbar navbar-expand-mdsm navbar-light bg-white shadow-sm">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="#">Action 1</a>
-                    <a class="dropdown-item" href="#">Action 2</a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient-light">
+    <a class="navbar-brand h1 mb-0 ml-2 mr-2" href="#">
+       <img src="https://i.ibb.co/7VrxgxS/png.png"  width="50" height="50" alt="png">Ateliê Digital</a>
+
+     <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarSite">
+        <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Início</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portifólio</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                      </li>
+                  </ul>
+
+ <!-- Botão para acionar modal -->
+ <button type="button" class="btn btn-danger ml-1 mr-1 " data-toggle="modal" data-target="#siteModal">
+    Promoção mês de Julho </button>
+<!-- fim do botão para adicionar modal -->
+
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+      Sociais
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Instagram</a>
+        <a class="dropdown-item" href="#">WhatsApp</a>
+
+      </div>
+    </li>
+  </ul>
+
+<form class="form-inline">
+    <input class="form-control ml-4 mr-2" type="search" placeholder="buscar...">
+    <button class="btn btn-dark" type="Submit">OK</button>
+  </form>
+
     </div>
 </nav>
