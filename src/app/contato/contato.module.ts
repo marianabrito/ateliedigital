@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 
 import { ContatoRoutingModule } from './contato-routing.module';
-import { ContatoComponent } from './contato.componente';
+import { ContatoComponent } from './contato.component';
 
 @NgModule({
   declarations: [
