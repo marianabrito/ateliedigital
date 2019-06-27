@@ -3,20 +3,20 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { ContatoRoutingModule } from './contato-routing.module';
+import { ContatoComponent } from './contato.componente';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    ContatoComponent
   ],
 
   imports: [
     CommonModule,
-    HomeRoutingModule,
+    ContatoRoutingModule,
 FormsModule,
 
   ],
 
 })
-export class HomeModule { }
+export class ContatoModule { }
