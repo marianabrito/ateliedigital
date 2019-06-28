@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: '/contato', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomeModule' },
-  { path: 'contato', redirectTo: 'contato/contato.module#ContatoModule' }
+  { path: 'contato', loadChildren:  './contato/contato.module#ContatoModule' }
 ];
 
 @NgModule({
