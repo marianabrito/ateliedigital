@@ -1,1 +1,72 @@
-pagina contato
+<div class="container-fluid">
+
+  <!-- START: Table Contato -->
+  <div class="container bg-white shadow-sm p-5 mt-4">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-between align-items-center mb-2">
+        <h2 class="font-weight-light mb-4">Agendamento de Contato</h2>
+        <a class="btn btn-outline-primary" [routerLink]="['/', 'contato', 'new']">
+          AGENDAR NOVO CONTATO
+          <span class="fa fa-plus"></span>
+        </a>
+      </div>
+
+      <div class="col-md-12">
+        <table class="table table-contato">
+          <thead class="shadow-sm thead-light">
+            <tr>
+              <th scope="col">
+                #
+              </th>
+              <th scope="col">NOME</th>
+              <th scope="col">TELEFONE</th>
+              <th scope="col">E-MAIL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let contato of contato">
+              <td scope="row">
+                {{ contato.id }}
+              </td>
+              <td>
+                <div>
+                  <img src="assets/img/contato/contato-1.jpg" alt="Contato" title="Chair" class="rounded mr-3" height="48">
+                  <p class="m-0 d-inline-block align-middle font-16">
+                    <a href="#" class="text-body">{{ contato.contato }}</a>
+                    <br />
+                    <span class="text-warning fa fa-star"></span>
+                    <span class="text-warning fa fa-star"></span>
+                    <span class="text-warning fa fa-star"></span>
+                    <span class="text-warning fa fa-star"></span>
+                    <span class="text-warning fa fa-star-half-o"></span>
+                  </p>
+                </div>
+              </td>
+              <td>
+                {{ contato.Email | currency }}
+              </td>
+              <td>{{ contato.sales | percent}}</td>
+              <td>
+                <span *ngIf="contato.active" class="badge badge-success">Active</span>
+                <span *ngIf="!contato.active" class="badge badge-danger">Deactive</span>
+              </td>
+              <td class="table-action">
+                <button class="btn btn-outline-dark action-icon">
+                  <span class="fa fa-eye"></span>
+                </button>
+                <a class="btn btn-outline-dark action-icon" [routerLink]="['/', 'contato', contato.id]">
+                  <span class="fa fa-edit"></span>
+                </a>
+                <button class="btn btn-outline-dark action-icon" (click)="removeContato(contato.id)">
+                  <span class="fa fa-trash"></span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- END: Table Contato -->
+
+</div>
